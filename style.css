@@ -21,14 +21,14 @@ body {
   height: 100px;
   width: 750px;
   background: rgb(172, 206, 235);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .search-area input {
   height: 45px;
   width: 550px;
   font-size: 18px;
   outline: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
   font-weight: 650;
 }
@@ -37,7 +37,7 @@ body {
   width: 150px;
   font-weight: 750;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   border: none;
   outline: none;
@@ -49,7 +49,7 @@ body {
   width: 760px;
   background: #939cbe;
   margin: 15px 0 0 0;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 img {
   margin-left: 15px;
@@ -57,8 +57,8 @@ img {
   margin-top: 15px;
   height: 200px;
   width: 200px;
-  border-radius: 50%;
-  border: 15px solid rgb(0, 140, 255);
+  border-radius: 10%;
+  border: 5px solid rgb(56, 25, 192);
 }
 
 .username h1 {
@@ -89,10 +89,11 @@ img {
 ul li {
   font-weight: 650;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin: 15px;
   padding: 5px 15px;
   background: #687fbd;
+  border-radius: 3px;
   list-style: none;
 }
 /* #output {
@@ -145,3 +146,4 @@ p {
   display: flex;
   align-items: center;
 }
+
