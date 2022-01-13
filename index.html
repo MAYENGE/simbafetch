@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fetch API</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+  
+    <div class="container">
+      <div class="search-area">
+        <input
+          type="text"
+          name=""
+          id="username"
+          placeholder="Enter Github Username"
+          autocomplete="off"
+        />
+        
+        <button class="click">getDetails</button>
+      </div>
+      <div class="output-container" id="output">
+        <div class="profile" id="profile"></div>
+        <div class="username">
+          <h1 id="name"></h1>
+        </div>
+        <div class="company">
+          <p id="company"></p>
+        </div>
+        <div class="info">
+          <ul>
+            <li id="followers"></li>
+            <li id="following"></li>
+            
+          </ul>
+        </div>
+        <h4 class="stars"></h4>
+      </div>
+    </div>
+  </body>
+</html>
