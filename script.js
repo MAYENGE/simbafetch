@@ -8,16 +8,17 @@ document.querySelector(".click").addEventListener("click", function () {
         document.querySelector("#notfound").innerHTML = "User was not found 🚫";
       } else {
         document.getElementById("name").innerHTML = data.name;
-        document.getElementById("company").innerHTML = data.company;
+        document.getElementById("company").innerHTML =
+          "campany : 👉🏿 " + data.company;
         document.getElementById("location").innerHTML =
-          "location : " + data.location;
+          "location :  👉🏿 " + data.location;
         document.querySelector("#repos").innerHTML =
-          data.public_repos + "repositories";
-        document.getElementById("blog").innerHTML = "blog :" + data.blog;
+          data.public_repos + " : repositories";
+        document.getElementById("blog").innerHTML = "blog : 👉🏿 " + data.blog;
         document.getElementById("followers").innerHTML =
-          data.followers + " Followers";
+          data.followers + " : Followers";
         document.getElementById("following").innerHTML =
-          data.following + " Following";
+          data.following + " : Following";
         document.getElementById("profile").innerHTML = `
       <img src="${data.avatar_url}" />
       `;
