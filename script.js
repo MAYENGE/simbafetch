@@ -8,6 +8,8 @@ document.querySelector(".click").addEventListener("click", function () {
       document.getElementById("company").innerHTML = data.company;
     document.getElementById("location").innerHTML =
         "location : " + data.location;
+    document.querySelector("#repos").innerHTML =
+        data.public_repos + "repositories";
       document.getElementById("blog").innerHTML = "blog :" + data.blog;
       document.getElementById("followers").innerHTML =
         data.followers + " Followers";
