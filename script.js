@@ -1,3 +1,11 @@
+document.querySelector(".click").disabled = true;
+document.querySelector("#username").onkeyup = () => {
+  if (document.querySelector("#username").value.length > 0) {
+    document.querySelector(".click").disabled = false;
+  } else {
+    document.querySelector(".click").disabled = true;
+  }
+};
 document.querySelector(".click").addEventListener("click", function () {
   document.getElementById("output").style.display = "block";
   const name = document.getElementById("username").value;
@@ -27,3 +35,4 @@ document.querySelector(".click").addEventListener("click", function () {
     })
   );
 });
+
