@@ -60,6 +60,9 @@ body {
 .search-area button:hover {
   background-color: rgb(240, 239, 245);
   color: blue;
+  height: 50px;
+  width: 155px;
+  border-radius: 10px;
 }
 .output-container {
   margin-top: 50px;
