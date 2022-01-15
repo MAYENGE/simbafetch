@@ -31,7 +31,7 @@ document.querySelector(".click").addEventListener("click", function () {
       <img src="${data.avatar_url}" />
       `;
         document.querySelector("#notfound").innerHTML = " ";
-        document.querySelector("#username").value=""
+        document.querySelector("#username").value="";
       }
     })
   );
