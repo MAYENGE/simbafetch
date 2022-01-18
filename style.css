@@ -170,7 +170,7 @@ p {
   display: flex;
   align-items: center;
 }
-@media (max-width: 480px) {
+@media all and(max-width: 480px) {
   body {
     height: 500vh;
     width: 50%;
@@ -201,5 +201,7 @@ p {
   p {
     white-space: nowrap;
   }
+  .search-area input {
+    font-size: 16px;
+  }
 }
-
