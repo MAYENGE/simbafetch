@@ -16,7 +16,7 @@
 body {
   height: 100vh;
   width: 100%;
-  display: grid;
+  /* display: grid; */
   place-items: center;
   background: #ac9cf1;
   line-height: 1.6;
@@ -87,7 +87,7 @@ img {
 }
 
 .username h1 {
-  position: absolute;
+  position: fixed;
   margin-top: 15px;
   margin-left: 245px;
   font-weight: 750;
@@ -169,5 +169,27 @@ p {
   color: rgb(243, 6, 6);
   display: flex;
   align-items: center;
+}
+@media (max-width: 480px) {
+  body {
+    height: 500vh;
+    width: 50%;
+  }
+  #header {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 5vw;
+  }
+  .username {
+    color: rgb(252, 2, 2);
+  }
+  #blog {
+    margin-right: 200px;
+  }
+  #notfound {
+    font-size: 4vw;
+    align-items: center;
+    margin-left: 250;
+  }
 }
 
