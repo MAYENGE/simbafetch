@@ -170,7 +170,7 @@ p {
   display: flex;
   align-items: center;
 }
-@media all and(max-width: 480px) {
+@media (max-width: 480px) {
   body {
     height: 500vh;
     width: 50%;
@@ -184,6 +184,7 @@ p {
   h1 {
     color: rgb(252, 2, 2);
     font-size: 5vw;
+    white-space: nowrap;
   }
   #blog {
     margin-right: 200px;
@@ -195,13 +196,11 @@ p {
     margin-left: 250;
     white-space: nowrap;
   }
-  #location {
-    white-space: nowrap;
-  }
+
   p {
     white-space: nowrap;
   }
-  .search-area input {
+  .search-area {
     font-size: 16px;
   }
 }
