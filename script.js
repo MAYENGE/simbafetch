@@ -4,6 +4,7 @@ document.querySelector("#username").onkeyup = () => {
     document.querySelector(".click").disabled = false;
   } else {
     document.querySelector(".click").disabled = true;
+    document.querySelector(".click").style.color = "black";
   }
 };
 document.querySelector(".click").addEventListener("click", function () {
@@ -16,13 +17,11 @@ document.querySelector(".click").addEventListener("click", function () {
         document.querySelector("#notfound").innerHTML = "User was not found 🚫";
       } else {
         document.getElementById("name").innerHTML = data.name;
-        document.getElementById("company").innerHTML =
-          "campany : 👉🏿 " + data.company;
-        document.getElementById("location").innerHTML =
-          "location :  👉🏿 " + data.location;
+        document.getElementById("company").innerHTML = data.company;
+        document.getElementById("location").innerHTML = data.location;
         document.querySelector("#repos").innerHTML =
           data.public_repos + " : repositories";
-        document.getElementById("blog").innerHTML = "blog : 👉🏿 " + data.blog;
+        document.getElementById("blog").innerHTML = data.blog;
         document.getElementById("followers").innerHTML =
           data.followers + " : Followers";
         document.getElementById("following").innerHTML =
@@ -31,9 +30,8 @@ document.querySelector(".click").addEventListener("click", function () {
       <img src="${data.avatar_url}" />
       `;
         document.querySelector("#notfound").innerHTML = " ";
-        document.querySelector("#username").value="";
+        document.querySelector("#username").value = "";
       }
     })
   );
 });
-
