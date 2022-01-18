@@ -179,6 +179,7 @@ p {
     margin-top: 20px;
     text-align: center;
     font-size: 5vw;
+    white-space: nowrap;
   }
   h1 {
     color: rgb(252, 2, 2);
@@ -186,11 +187,19 @@ p {
   }
   #blog {
     margin-right: 200px;
+    white-space: nowrap;
   }
   #notfound {
     font-size: 4vw;
     align-items: center;
     margin-left: 250;
+    white-space: nowrap;
+  }
+  #location {
+    white-space: nowrap;
+  }
+  p {
+    white-space: nowrap;
   }
 }
 
