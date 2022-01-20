@@ -18,7 +18,7 @@ body {
   width: 100%;
   /* display: grid; */
   place-items: center;
-  background: #ac9cf1;
+  background: #cac2f0;
   line-height: 1.6;
 }
 .search-area {
@@ -28,7 +28,7 @@ body {
   align-items: center;
   height: 100px;
   width: 750px;
-  background: rgb(172, 206, 235);
+  background: rgb(179, 199, 216);
   border-radius: 5px;
 }
 .search-area input {
@@ -68,10 +68,10 @@ body {
   margin-top: 50px;
   height: 350px;
   width: 760px;
-  background: #939cbe;
+  
   margin: 15px 0 0 0;
   border-radius: 5px;
-  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+  
   @media screen {
     max-width: 200px;
   }
@@ -93,14 +93,9 @@ img {
   font-weight: 750;
   color: rgb(56, 25, 192);
 }
-.bio {
+#bio {
   position: absolute;
-  font-size: 20px;
-  font-weight: 600;
-  margin-left: 245px;
-  width: 500px;
-  color: white;
-  margin-top: 75px;
+  margin-top: 200px;
 }
 .info ul {
   position: absolute;
@@ -202,5 +197,8 @@ p {
   }
   .search-area {
     font-size: 16px;
+  }
+  #bio {
+    word-wrap: break-word;
   }
 }
