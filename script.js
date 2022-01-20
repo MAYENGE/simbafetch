@@ -18,6 +18,7 @@ document.querySelector(".click").addEventListener("click", function () {
       } else {
         document.getElementById("name").innerHTML = data.name;
         document.getElementById("company").innerHTML = data.company;
+        document.getElementById("bio").innerHTML = data.bio;
         document.getElementById("location").innerHTML = data.location;
         document.querySelector("#repos").innerHTML =
           data.public_repos + " : repositories";
@@ -31,6 +32,7 @@ document.querySelector(".click").addEventListener("click", function () {
       `;
         document.querySelector("#notfound").innerHTML = " ";
         document.querySelector("#username").value = "";
+        document.querySelector(".click").disabled = true;
       }
     })
   );
